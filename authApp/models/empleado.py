@@ -4,6 +4,7 @@ from .persona import Persona
 
 class Empleado(models.Model):
     codio_empleado = models.IntegerField(primary_key=True)
+    """
     cc_persona = models.ForeignKey(Persona, related_name="Persona", blank=False, null=False, on_delete=models.CASCADE)  
     forma_pago = models.CharField(max_length= 80)
     numero_cuenta = models.CharField(max_length= 80)
@@ -29,5 +30,5 @@ class Empleado(models.Model):
     inicio_vacaciones = models.DateField()
     fin_vacaciones = models.DateField()
     estado = models.CharField(max_length= 80)
-        
+     """   
     

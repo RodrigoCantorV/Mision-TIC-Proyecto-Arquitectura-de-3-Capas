@@ -1,4 +1,7 @@
 from django.contrib import admin
+from .models.user import User
+from .models.account import Account
+
 from .models.persona import Persona
 from .models.empleado import Empleado
 from .models.liquidacion_sueldo import Liquidacion_Sueldo
@@ -11,6 +14,7 @@ from .models.fsp import FSP
 from .models.seguridad_social import Seguridad_Social
 from .models.aportes_parafiscales import Aportes_Parafiscales
 from .models.prestacion_social import Prestacion_Social
+
 # Register your models here.
 
 
@@ -26,3 +30,5 @@ admin.site.register(FSP)
 admin.site.register(Seguridad_Social)
 admin.site.register(Aportes_Parafiscales)
 admin.site.register(Prestacion_Social)
+admin.site.register(User)
+admin.site.register(Account)

@@ -6,7 +6,8 @@
 # Node artifact files
 node_modules/
 dist/
-
+db.sqlite3
+codigo.py
 # Compiled Java class files
 *.class
 

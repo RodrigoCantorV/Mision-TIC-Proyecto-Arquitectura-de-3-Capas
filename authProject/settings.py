@@ -49,8 +49,8 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {
- "DEFAULT_PERMISSION_CLASESS":("rest_framework.permissions.AllowAny",),
- 'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework_simplejwt.authentication.JWTAuthentication',),
+ 'DEFAULT_PERMISSION_CLASESS':('rest_framework.permissions.AllowAny',),
+ 'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework_simplejwt.authentication.JWTAuthentication',)
 }
 
 SIMPLE_JWT = {
@@ -76,6 +76,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'authProject.urls'
+
+AUTH_USER_MODEL = 'authApp.User'
 
 TEMPLATES = [
     {
