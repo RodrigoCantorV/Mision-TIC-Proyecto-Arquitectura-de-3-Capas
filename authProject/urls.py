@@ -42,7 +42,13 @@ from authApp.views.vistas_empleados.empleadoReadOneView import EmpleadoReadOneVi
 from authApp.views.vistas_empleados.empleadoUpdateView import EmpleadoUpdateView
 from authApp.views.vistas_empleados.empleadoDeleteView import EmpleadoDeleteView
 
-
+## CRUD DE liquidacion_sueldo 
+from authApp.views.vistas_liquidacion_sueldo.liquidacion_SueldoCreateView import Liquidacion_SueldoCreateView
+from authApp.views.vistas_liquidacion_sueldo.liquidacion_SueldoReadView import liquidacion_SueldoReadView
+from authApp.views.vistas_liquidacion_sueldo.liquidacion_SueldoReadOneView import Liquidacion_SueldoReadOneView
+from authApp.views.vistas_liquidacion_sueldo.liquidacion_SueldoUpdateView import Liquidacion_SueldoUpdateView
+from authApp.views.vistas_liquidacion_sueldo.liquidacion_sueldoDeleteView import Liquidacion_SueldoDeleteView
+ 
 urlpatterns = [
     path('', inicio_sesion),
     path('admin/', admin.site.urls),
@@ -79,4 +85,11 @@ urlpatterns = [
    # path('registrarEmpleado/', registrar_empleado),
    # path('eliminarEmpleado/', eliminar_empleado),
    # path('modificarEmpleado/', modificar_empleado),
+
+    ## CRUD DE liquidacion_sueldo 
+    path('liquidacion/crear/',Liquidacion_SueldoCreateView.as_view()),
+    path('liquidacion/listar/',liquidacion_SueldoReadView.as_view()),
+    path('liquidacion/listar/<int:pk>/',Liquidacion_SueldoReadOneView.as_view()),
+    path('liquidacion/actualizar/<int:pk>/',Liquidacion_SueldoUpdateView.as_view()),
+    path('liquidacion/eliminar/<int:pk>/',Liquidacion_SueldoDeleteView.as_view()),
 ]

@@ -7,7 +7,7 @@ class Liquidacion_Sueldo(models.Model):
     fecha_liquidacion = models.DateField()
     dias_laborados = models.IntegerField()
     sueldo = models.DecimalField(max_digits = 7, decimal_places = 0)
-    IBC = models.DecimalField(max_digits = 7, decimal_places = 0)
-    neto_pagar = models.DecimalField(max_digits = 7, decimal_places = 0)
+    #IBC = models.DecimalField(max_digits = 7, decimal_places = 0)
+    #neto_pagar = models.DecimalField(max_digits = 7, decimal_places = 0)
 
 
