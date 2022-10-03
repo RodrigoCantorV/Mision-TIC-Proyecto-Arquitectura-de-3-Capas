@@ -29,11 +29,18 @@ router.register(r'',PersonaViewSet)
     # NOTA IMPORTANTE: 
     # PARA ESTA TERCERA FORMA DEBEMOS DEJAR DE ULTIMAS LOS COMANDOA MAKEMIGRATIONS Y MIGRATE
 
+
+## CRUD DE Empleado
+
 #from authApp.views.vistas_empleados.empleadosHttpResponse  import registrar_empleado
 #from authApp.views.vistas_empleados.empleadosHttpResponse  import eliminar_empleado
 #from authApp.views.vistas_empleados.empleadosHttpResponse  import modificar_empleado
-
 from authApp.views.vistas_empleados.empleadoViewSet import EmpleadoViewSet
+from authApp.views.vistas_empleados.empleadoCreateView import EmpleadoCreateView
+from authApp.views.vistas_empleados.empleadoReadView import EmpleadoReadView
+from authApp.views.vistas_empleados.empleadoReadOneView import EmpleadoReadOneView
+from authApp.views.vistas_empleados.empleadoUpdateView import EmpleadoUpdateView
+from authApp.views.vistas_empleados.empleadoDeleteView import EmpleadoDeleteView
 
 
 urlpatterns = [
@@ -62,8 +69,13 @@ urlpatterns = [
     #FORMA 3
     path('persona3/',include(router.urls)),
    
-    path('empleado/listar/', EmpleadoViewSet.as_view({'get':'list'})),
-   
+   ## CRUD DE Empleado 
+    path('empleado/listar2/', EmpleadoViewSet.as_view({'get':'list'})),
+    path('empleado/crear/',EmpleadoCreateView.as_view()),
+    path('empleado/listar/',EmpleadoReadView.as_view()),
+    path('empleado/listar/<int:pk>/',EmpleadoReadOneView.as_view()),
+    path('empleado/actualizar/<int:pk>/',EmpleadoUpdateView.as_view()),
+    path('empleado/eliminar/<int:pk>/',EmpleadoDeleteView.as_view()),
    # path('registrarEmpleado/', registrar_empleado),
    # path('eliminarEmpleado/', eliminar_empleado),
    # path('modificarEmpleado/', modificar_empleado),

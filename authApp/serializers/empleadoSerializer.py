@@ -6,6 +6,8 @@ class EmpleadoSerializer(serializers.ModelSerializer):
         model = Empleado
         fields = [
          'codio_empleado',
+         'cc_persona',
+         'forma_pago',
          ]
 
 """
