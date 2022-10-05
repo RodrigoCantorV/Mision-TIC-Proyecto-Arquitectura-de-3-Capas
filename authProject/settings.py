@@ -29,7 +29,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    '83f3-181-59-2-27.ngrok.io'
+    '83f3-181-59-2-27.ngrok.io',
+  
 ]
 
 
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework_simplejwt',
     'rest_framework',
+    'corsheaders',
     'authApp'
 ]
 
@@ -73,7 +75,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+
+CORS_ORIGIN_WHITELIST=(
+    'http://localhost',
+    'http://127.0.0.1:5500',
+   
+)
 
 ROOT_URLCONF = 'authProject.urls'
 

@@ -1,0 +1,227 @@
+body {
+    margin: 0 0 0 0;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 10vh;
+    min-height: 100px;
+    background-color: #283747;
+    color: #E5E7E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    width: 50%;
+    text-align: center;
+}
+
+header a {
+    padding: 10px;
+    color: white;
+}
+/*--------------------------------------------------------------*/
+.Crear-persona {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 49%;
+    height: 350px;
+    background-color: gray;
+    float: left;
+}
+
+.Crear-persona form {
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.Crear-persona form label {
+    width: 110px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.Crear-persona form input {
+    width: 35%;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.Crear-persona button {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+}
+
+.Crear-persona button:hover {
+    background-color: cyan;
+ }
+/*--------------------------------------------------------------*/
+.Listar-persona {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 49%;
+    height: 350px;
+    background-color: gray;
+    float: left;
+}
+
+.Listar-persona table {
+    width: 100%;
+    background-color: white;
+}
+
+.Listar-persona button {
+    margin-top: 10px;
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.Listar-persona button:hover {
+    background-color: cyan;
+ }
+
+/*--------------------------------------------------------------*/
+.Actualizar-persona {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 49%;
+    height: 380px;
+    background-color: gray;
+    float: left;
+}
+
+.Actualizar-persona form {
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.Actualizar-persona form label {
+    width: 110px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.Actualizar-persona form input {
+    width: 35%;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.Actualizar-persona label {
+    width: 110px;
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+
+.Actualizar-persona input {
+    width: 35%;
+    height: 25px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.Actualizar-persona button {
+    width: 240PX;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.Actualizar-persona button:hover {
+   background-color: cyan;
+}
+
+/*--------------------------------------------------------------*/
+.Eliminar-persona {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 49%;
+    height: 380px;
+    background-color: gray;
+    float: left;
+}
+
+.Eliminar-persona form {
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.Eliminar-persona form label {
+    width: 110px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.Eliminar-persona form input {
+    width: 35%;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.Eliminar-persona label {
+    width: 110px;
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+
+.Eliminar-persona input {
+    width: 35%;
+    height: 25px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+
+.Eliminar-persona button {
+    margin-top: 10px;
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.Eliminar-persona button:hover {
+    background-color: cyan;
+ }
+/*--------------------------------------------------------------*/
+.footer {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+    height: 5vh;
+    min-height: 80px;
+    background-color: #283747;
+    color: #E5E7E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer h1 {
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    padding: 10px;
+    color: white;
+}

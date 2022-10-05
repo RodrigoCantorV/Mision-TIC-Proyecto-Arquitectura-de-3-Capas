@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos3.css">
+</head>
+
+<body>
+    <header>
+        <div id="app" class="app">
+            <div class="header">
+                <h1>
+                    <a href="">Personas</a>
+                    <a href="">Empleados</a>
+                    <a href="">Liquidacion</a>
+                </h1>
+                <h1>Misión TIC</h1>
+                <h1>SISTEMA LIQUIDACIÓN NOMINA</h1>
+            </div>
+        </div>
+    </header>
+    <div class="Contenedor-CRUD">
+        <div class="Crear-persona">
+            <h1>Registrar Persona</h1>
+            <form name="form" action="" method="get">
+                <label for="">Cedula</label>
+                <input type="text" name="cedula" id="cedulaCrear">
+                <label for="">Nombre</label>
+                <input type="text" name="nombre" id="nombreCrear">
+                <label for="">Apellido</label>
+                <input type="text" name="apellido" id="apellidoCrear">
+                <label for="">fecha</label>
+                <input type="text" name="fecha" id="fechaCrear">
+                <label for="">correo</label>
+                <input type="text" name="correo" id="correoCrear">
+                <label for="">celular</label>
+                <input type="text" name="celular" id="celularCrear">
+            </form>
+            <button onclick="registrarPersona()">Registrar</button>
+        </div>
+        <div class="Listar-persona">
+            <h1>Listar personas</h1>
+            <table id="listarPersonas" border="1">
+            <button onclick="consultarDatos()">Actualizar tabla</button>
+            </table>
+        </div>
+        <div class="Actualizar-persona">
+            <h1>Modificar persona</h1>
+            <label for="">Cedula</label>
+            <input type="text" name="cedulafiltrar">
+            <button onclick="obtenerDatos()">Traer informacion</button>
+            <form name="form" action="" method="get">
+                <label for="">Cedula</label>
+                <input type="text" name="cedulaActualizar" id="cedulaActualizar">
+                <label for="">Nombre</label>
+                <input type="text" name="nombreActualizar" id="nombreActualizar">
+                <label for="">Apellido</label>
+                <input type="text" name="apellidoActualizar" id="apellidoActualizar">
+                <label for="">fecha</label>
+                <input type="text" name="fechaActualizar" id="fechaActualizar">
+                <label for="">correo</label>
+                <input type="text" name="correoActualizar" id="correoActualizar">
+                <label for="">celular</label>
+                <input type="text" name="celularActualizar" id="celularActualizar">
+            </form>
+            <button onclick="ModificarPersona()">Modificar informacion</button>
+        </div>
+        <div class="Eliminar-persona">
+            <h1>Eliminar persona</h1>
+            <label for="">Cedula</label>
+            <input type="text" name="cedulafiltrar2">
+            <button onclick="obtenerDatos2()">Traer informacion</button>
+            <form name="form" action="" method="get">
+                <label for="">Cedula</label>
+                <input type="text" name="cedulaEliminar" id="cedulaEliminar">
+                <label for="">Nombre</label>
+                <input type="text" name="nombreEliminar" id="nombreEliminar">
+                <label for="">Apellido</label>
+                <input type="text" name="apellidoEliminar" id="apellidoEliminar">
+                <label for="">fecha</label>
+                <input type="text" name="fechaEliminar" id="fechaEliminar">
+                <label for="">correo</label>
+                <input type="text" name="correoEliminar" id="correoEliminar">
+                <label for="">celular</label>
+                <input type="text" name="celularEliminar" id="celularEliminar">
+            </form>
+            <button onclick="eliminarPersona()">Eliminar persona</button>
+        </div>
+
+    </div>
+    <footer>
+        <div id="app" class="app">
+            <div class="footer">
+                <h1>SERGIO CANTOR VASQUEZ</h1>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="miscript.js"></script>
+</body>
+
+</html>
